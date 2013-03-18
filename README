@@ -1,0 +1,2 @@
+This program is ment for mapping results of a FEA to openFoam and vice versa. The central idea is to find the center points of nodes, sort them according to  coordinate values, find the corresponding results and use the mapping to write the results into the receiving simulation.
+
