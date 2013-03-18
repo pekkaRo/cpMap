@@ -23,7 +23,10 @@ bool mycomp(coord_type a,coord_type b)
   return (get<0>(a) < get<0>(b));
 }
 
-bool struct_comp(co_struct l, co_struct r)
+//The trouble was that I passed arguments to comparison with reference in the function
+// prototype. Now that I pass a copy it seems to be allright.
+
+bool struct_comp(const co_struct& l, const co_struct& r)
 {
   if (l.x == r.x)
     return (l.y < r.y);
